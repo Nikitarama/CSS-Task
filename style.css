@@ -1,24 +1,63 @@
-@media screen and (max-width:360px) {
-    body {
-        display:inline;
-        width:200px;
-    }
-    img {
-        width:150px;
-    }
-    p {
-        width:100%;
-    }
-}   
 
-
-@media (max-width:600px) {
-    img {
-        max-width:300px;}
+* {
+    font-family: 'Times New Roman', Times, serif;
 }
 
-@media (max-width:1024px) {
-    img { 
-        width:600px;
-    }
+.name {
+    margin: -120px;
+    margin-left: 540px;
+    margin-bottom: 200px;
+    position: relative;
+    
 }
+
+img {
+    padding: -100;
+    margin-top: 100px;
+    margin-left: 300px;
+    width:200px;
+    height:200px;
+    z-index: 1;
+    border-radius: 100px;
+   box-shadow: 0 0 20px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: bold;
+    z-index: 1;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 380px;
+}
+
+h5 {
+    margin-top:-10px;
+    font-size: 20px;
+    width: 400px;
+    z-index: 1;
+    color: white;
+}
+
+.circle {
+    margin-left: -110px;
+    width: 400px;
+    height: 160px;
+
+    border-radius: 0px;
+ 
+    position: absolute;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: -2;
+  }
+  @keyframes example {
+    0%  {background-color:rgb(145, 213, 240); left:0px; top:0px;}
+    50%  {background-color:rgb(242, 192, 247); left:400px; top:0px;}
+    100%  {background-color:rgb(148, 238, 178); left:100px; top:0px;}
+  }
+
+  footer {
+    background-color: rgb(215, 231, 245);
+  }
